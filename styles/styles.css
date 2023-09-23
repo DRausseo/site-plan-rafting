@@ -12,6 +12,7 @@ nav a {
 h1 {
   color: steelblue;
 }
+
 img {
   width: 150px;
   height: auto;
@@ -19,6 +20,46 @@ img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
+
 p {
   padding: 10px;
+}
+
+main {
+  max-width: 840px;
+}
+
+/* New CSS rules for 'aside' element */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* CSS rule for 'aside' images */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Adjust the 'main' image selector to be more specific */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Change the 'p' selector padding value to 0 pixels */
+p {
+  padding: 0;
+}
+
+/* CSS rule for the 'footer' element */
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
 }
