@@ -1,0 +1,59 @@
+/* Estilos globales */
+:root {
+    --primary-color: #FFD100; /* Color primario */
+    --secondary-color: #00247D; /* Color secundario */
+    --accent1-color: #EF3340; /* Color de acento 1 */
+    --accent2-color: #FFFFFF; /* Color de acento 2 */
+    --heading-font: 'Montserrat', sans-serif; /* Fuente para encabezados */
+    --paragraph-font: 'Lora', serif; /* Fuente para párrafos */
+    --nav-background-color: #00247D; /* Color de fondo de la navegación */
+    --nav-link-color: #FFFFFF; /* Color de enlaces de navegación */
+    --nav-hover-link-color: #FFD100; /* Color de enlaces de navegación al pasar el mouse */
+    --nav-hover-background-color: #EF3340; /* Color de fondo de enlaces de navegación al pasar el mouse */
+  }
+  
+  /* Estilos para elementos específicos */
+  body {
+    font-family: var(--paragraph-font); /* Aplicar la fuente de párrafo */
+    max-width: 960px; /* Limitar el ancho del cuerpo */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px; /* Espaciado alrededor del contenido */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font); /* Aplicar la fuente para encabezados */
+    color: var(--primary-color); /* Aplicar el color primario a los encabezados */
+  }
+  
+  header {
+    padding: 20px; /* Espaciado en el encabezado */
+    background-color: var(--accent1-color); /* Color de fondo del encabezado */
+  }
+  
+  p {
+    padding: 25px; /* Espaciado en los párrafos */
+  }
+  
+  nav {
+    background-color: var(--nav-background-color); /* Color de fondo de la navegación */
+    font-size: 1.2rem; /* Tamaño de fuente de navegación */
+    display: flex; /* Mostrar elementos de navegación en línea */
+  }
+  
+  nav a {
+    display: block; /* Mostrar enlaces de navegación como bloques */
+    color: var(--nav-link-color); /* Color de enlaces de navegación */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+    padding: 1rem; /* Espaciado alrededor de los enlaces */
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color); /* Color de enlaces de navegación */
+  }
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color); /* Color de enlaces de navegación al pasar el mouse */
+    background-color: var(--nav-hover-background-color); /* Color de fondo de enlaces de navegación al pasar el mouse */
+  }
+  
+  
