@@ -1,0 +1,79 @@
+/* Importa Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tus+Fuentes+Seleccionadas');
+:root {
+    --color-primario: #FFD100;
+    /* Color primario */
+    --color-secundario: #00247D;
+    /* Color secundario */
+    --color-acento1: #EF3340;
+    /* Color de acento 1 */
+    --color-acento2: #FFFFFF;
+    /* Color de acento 2 */
+    --fuente-encabezado: 'Tus Fuentes Seleccionadas', sans-serif;
+    /* Fuente para encabezados */
+    --fuente-parrafo: 'Otra Fuente', serif;
+    /* Fuente para párrafos */
+    --color-fondo-navegacion: #00247D;
+    /* Color de fondo de la navegación */
+    --color-enlace-navegacion: #FFFFFF;
+    /* Color de enlaces de navegación */
+    --color-enlace-navegacion-hover: #FFD100;
+    /* Color de enlaces de navegación al pasar el mouse */
+    --color-fondo-enlace-navegacion-hover: #EF3340;
+    /* Color de fondo de enlaces de navegación al pasar el mouse */
+}
+/* Estilo de encabezados y párrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-encabezado);
+    color: var(--color-primario);
+}
+
+p {
+    font-family: var(--fuente-parrafo);
+    color: var(--color-secundario);
+    /* Otros estilos de párrafos según tus preferencias */
+}
+/* Elimina subrayado de enlaces sociales */
+.sociallinks a {
+    text-decoration: none;
+}
+/* Limita el ancho de la página */
+body {
+    max-width: 1200px;
+    /* Ajusta según tus preferencias */
+    margin: 0 auto;
+}
+/* Estilo del contenedor Hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+    /* Asegura que los elementos secundarios no se desborden */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+}
+
+.hero article img {
+    float: right;
+    /* Otra posición según tus preferencias */
+}
+
+.hero article {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Ajusta según tus preferencias */
+    padding: 20px;
+    /* Ajusta según tus preferencias */
+}
