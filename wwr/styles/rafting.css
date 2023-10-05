@@ -1,5 +1,6 @@
-/* Importa Google Fonts */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tus+Fuentes+Seleccionadas');
+
 :root {
     --color-primario: #FFD100;
     /* Color primario */
@@ -22,7 +23,8 @@
     --color-fondo-enlace-navegacion-hover: #EF3340;
     /* Color de fondo de enlaces de navegación al pasar el mouse */
 }
-/* Estilo de encabezados y párrafos */
+
+/* Style headers and párrafos */
 h1,
 h2,
 h3,
@@ -36,23 +38,26 @@ h6 {
 p {
     font-family: var(--fuente-parrafo);
     color: var(--color-secundario);
-    /* Otros estilos de párrafos según tus preferencias */
+    /* Others styles of párrafos */
 }
-/* Elimina subrayado de enlaces sociales */
+
+/* delete subrayado de enlaces sociales */
 .sociallinks a {
     text-decoration: none;
 }
+
 /* Limita el ancho de la página */
 body {
     max-width: 1200px;
     /* Ajusta según tus preferencias */
     margin: 0 auto;
 }
+
 /* Estilo del contenedor Hero */
 .hero {
     position: relative;
     overflow: hidden;
-    /* Asegura que los elementos secundarios no se desborden */
+    /* The elements secundarios no se desborden */
 }
 
 .hero img {
@@ -68,8 +73,15 @@ body {
 
 .hero article img {
     float: right;
-    /* Otra posición según tus preferencias */
 }
+
+.hero article img.happy-client-image {
+    float: right;
+    /* Otra posición según tus preferencias */
+    opacity: 0.7;
+    /* Add transparency only 'happy-client-image' */
+}
+
 
 .hero article {
     background-color: rgba(255, 255, 255, 0.8);
@@ -77,3 +89,22 @@ body {
     padding: 20px;
     /* Ajusta según tus preferencias */
 }
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    background-color: #ecf3f2;
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px;
+    /* Espaciado entre enlaces, ajusta según sea necesario */
+    text-decoration: none;
+    /* Delete the subrayado 

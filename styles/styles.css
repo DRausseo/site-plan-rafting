@@ -1,27 +1,84 @@
+/* Styles for the navigation bar */
+nav {
+  background-color: steelblue;
+  padding: 2px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+/* Style for the main header */
+h1 {
+  color: steelblue;
+}
+
+/* Styles for images */
+img {
+  width: 80px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* Reset the padding to 0 pixels for paragraphs */
+p {
+  padding: 30;
+  /* Reemplacé el número por px */
+}
+
+/* Styles for the main content */
+main {
+  max-width: 855px;
+}
+
 /* New CSS rules for the 'aside' element */
 aside {
-  width: 20rem;
+  width: 40rem;
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  background-color: lightblue; /* Cambiamos el color de fondo a azul claro */
-  color: darkblue; /* Cambiamos el color del texto a azul oscuro */
+  background-color: lightblue;
+  /* Change the background color to light blue */
+  color: darkblue;
+  /* Change the text color to dark blue */
   text-align: center;
-  position: relative; /* Añadimos esta propiedad para establecer posición relativa */
+  position: relative;
+  /* Add this property */
 }
 
 /* CSS rule for images inside 'aside' */
 aside img {
-  width: 200px;
+  width: 255px;
   height: auto;
 }
 
 /* CSS rule for the 'h2' heading inside 'aside' */
 aside h2 {
   position: absolute;
-  top: 20px; /* Ajusta según sea necesario */
-  left: 20px; /* Ajusta según sea necesario */
-  background-color: lightblue; /* Cambiamos el color de fondo a azul claro */
-  color: darkblue; /* Cambiamos el color del texto a azul oscuro */
-  padding: 5px; /* Agrega relleno para legibilidad */
+  top: 20px;
+  /* Adjust as needed */
+  left: 20px;
+  /* Adjust as needed */
+  background-color: lightblue;
+  /* Change the background color to light blue */
+  color: darkblue;
+  /* Change the text color to dark blue */
+  padding: 15px;
+  /* Add padding for readability */
+}
+
+/* Styles for the footer */
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Additional rule for the main image to float right */
+main img {
+  float: right;
 }
