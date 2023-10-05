@@ -82,7 +82,6 @@ body {
     /* Add transparency only 'happy-client-image' */
 }
 
-
 .hero article {
     background-color: rgba(255, 255, 255, 0.8);
     /* Ajusta según tus preferencias */
@@ -95,29 +94,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 20px;
-    
-    background-color: #ecf3f2;
-=======
     padding: 10px;
     /* Ajusta según sea necesario */
     background-color: #efefef;
     /* Ajusta según sea necesario */
 }
->>>>>>> 068a1fe7d0e3455ff1b283691dcd255edf1dd37a
 
 nav {
     display: flex;
+    justify-content: space-between;
+    /* Distribuye uniformemente los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
 }
 
 nav a {
-<<<<<<< HEAD
-    margin-right: 20px;
-    /* Espaciado entre enlaces, ajusta según sea necesario */
-    text-decoration: none;
-    /* Delete the subrayado 
-=======
     margin-right: 10px;
     /* Espaciado entre enlaces, ajusta según sea necesario */
     text-decoration: none;
@@ -125,4 +116,3 @@ nav a {
     color: #333;
     /* Color del texto, ajusta según sea necesario */
 }
->>>>>>> 068a1fe7d0e3455ff1b283691dcd255edf1dd37a
