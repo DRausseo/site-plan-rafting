@@ -95,16 +95,34 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     padding: 20px;
     
     background-color: #ecf3f2;
+=======
+    padding: 10px;
+    /* Ajusta según sea necesario */
+    background-color: #efefef;
+    /* Ajusta según sea necesario */
+}
+>>>>>>> 068a1fe7d0e3455ff1b283691dcd255edf1dd37a
 
 nav {
     display: flex;
 }
 
 nav a {
+<<<<<<< HEAD
     margin-right: 20px;
     /* Espaciado entre enlaces, ajusta según sea necesario */
     text-decoration: none;
     /* Delete the subrayado 
+=======
+    margin-right: 10px;
+    /* Espaciado entre enlaces, ajusta según sea necesario */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: #333;
+    /* Color del texto, ajusta según sea necesario */
+}
+>>>>>>> 068a1fe7d0e3455ff1b283691dcd255edf1dd37a
