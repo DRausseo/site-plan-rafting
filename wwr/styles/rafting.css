@@ -57,7 +57,9 @@ body {
 .hero {
     position: relative;
     overflow: hidden;
-    /* The elements secundarios no se desborden */
+    background-repeat: no-repeat;
+    /* Evitar la repetición de la imagen de fondo */
+    background-size: cover;
 }
 
 .hero img {
@@ -66,46 +68,43 @@ body {
     height: auto;
 }
 
-.hero h1,
-.hero article {
+.hero .title-box {
     position: absolute;
-}
-
-.hero article img {
-    float: right;
-}
-
-.hero article img.happy-client-image {
-    float: right;
-    /* Otra posición según tus preferencias */
-    opacity: 0.7;
-    /* Add transparency only 'happy-client-image' */
-}
-
-.hero article {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
-    /* Ajusta según tus preferencias */
     padding: 20px;
-    /* Ajusta según tus preferencias */
+    text-align: center;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el título dentro de la caja */
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--color-primario);
 }
 
 /* Estilos para el encabezado */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px;
-    /* Ajusta según sea necesario */
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
     background-color: #efefef;
-    /* Ajusta según sea necesario */
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    /* Distribuye uniformemente los elementos */
+    justify-content: flex-end;
     align-items: center;
-    /* Alinea verticalmente los elementos */
+    /* Distribuye uniformemente los elementos */
 }
 
 nav a {
@@ -115,4 +114,85 @@ nav a {
     /* Elimina el subrayado de los enlaces */
     color: #333;
     /* Color del texto, ajusta según sea necesario */
+}
+
+/* Estilos para la sección de historia */
+.history-section {
+    display: grid;
+   
+    grid-template-columns: 1fr auto 1fr;
+    /* Tres columnas, la del medio para la imagen, las otras para el texto */
+    gap: 20px;
+    /* Espacio entre las columnas */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo del contenedor History */
+.history-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo para la imagen dentro de la caja History */
+.history-image {
+    max-width: 45%;
+    /* Usa 'max-width' para evitar que la imagen sea más grande que su contenedor */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centrar la imagen */
+}
+
+/* Estilo para el texto izquierdo en la caja History */
+.history-text-left {
+    text-align:left;
+    
+    margin-right: 10px;
+}
+
+/* Estilo para el texto derecho en la caja History */
+.history-text-right {
+    text-align:right;
+  
+    margin-left: 10px;
+}
+
+/* Estilos para la sección de aventuras */
+.adventures-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.adventures-section figure {
+    flex: 0 1 calc(20% - 10px);
+}
+
+.adventures-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #efefef;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks figure {
+    margin-left: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
 }
