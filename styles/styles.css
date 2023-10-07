@@ -1,22 +1,40 @@
 /* Styles for the navigation bar */
 nav {
   background-color: steelblue;
-  padding: 2px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+/* Styles for the header and footer */
+header,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Styles for navigation links */
 nav a {
-  color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Roboto, Arial, sans-serif;
+  color: #fff;
 }
 
 /* Style for the main header */
 h1 {
   color: steelblue;
+  border-bottom: 2px solid steelblue;
+  /* Add a bottom border to h1 */
 }
 
 /* Styles for images */
 img {
+  float: right;
   width: 80px;
   height: auto;
   border: 1px solid steelblue;
@@ -26,33 +44,33 @@ img {
 
 /* Reset the padding to 0 pixels for paragraphs */
 p {
-  padding: 30;
-  /* Reemplacé el número por px */
+  padding: 0;
 }
 
 /* Styles for the main content */
 main {
   max-width: 855px;
+  margin: 1rem;
+  /* Añadí margen */
 }
 
 /* New CSS rules for the 'aside' element */
 aside {
-  width: 40rem;
+  width: 20rem;
   margin: 1rem;
+  /* Añadí margen */
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: lightblue;
-  /* Change the background color to light blue */
   color: darkblue;
-  /* Change the text color to dark blue */
   text-align: center;
   position: relative;
-  /* Add this property */
 }
 
 /* CSS rule for images inside 'aside' */
 aside img {
-  width: 255px;
+  width: 100%;
+  /* Hacer que la imagen ocupe el 100% del contenedor */
   height: auto;
 }
 
@@ -60,15 +78,10 @@ aside img {
 aside h2 {
   position: absolute;
   top: 20px;
-  /* Adjust as needed */
   left: 20px;
-  /* Adjust as needed */
   background-color: lightblue;
-  /* Change the background color to light blue */
   color: darkblue;
-  /* Change the text color to dark blue */
   padding: 15px;
-  /* Add padding for readability */
 }
 
 /* Styles for the footer */
@@ -81,4 +94,27 @@ footer {
 /* Additional rule for the main image to float right */
 main img {
   float: right;
+}
+
+/* CSS rule for the 'aside' element inside 'grid' */
+.grid {
+  display: grid;
+  align-items: start;
+  /* Alinear al inicio de la cuadrícula */
+  grid-template-columns: auto 20rem;
+  /* Cambiado el orden de las columnas */
+}
+
+main {
+  margin: 1rem;
+  grid-column: 1 / span 1;
+  /* Ajustado el número de columnas que ocupa */
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 2 / span 1;
+  /* Ajustado el número de columnas que ocupa */
+  grid-row: 1;
 }
