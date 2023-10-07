@@ -84,6 +84,28 @@ aside h2 {
   padding: 15px;
 }
 
+/* Nuevas reglas CSS para el contenedor de los templos */
+.temples-container {
+  margin-top: -10rem;
+  /* Ajustado a -10 rem */
+}
+
+.temples-container h2 {
+  margin-bottom: 0.5rem;
+  /* Alisto y ajustado */
+}
+
+.temples-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.temples-container li {
+  margin-bottom: 0,5rem;
+  /* Ajusta según sea necesario */
+}
+
 /* Styles for the footer */
 footer {
   margin-top: 1em;
@@ -100,9 +122,9 @@ main img {
 .grid {
   display: grid;
   align-items: start;
-  /* Alinear al inicio de la cuadrícula */
+  /* Alinee al inicio de la cuadrícula */
   grid-template-columns: auto 20rem;
-  /* Cambiado el orden de las columnas */
+  /* Cambie el orden de las columnas */
 }
 
 main {
