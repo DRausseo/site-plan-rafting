@@ -81,13 +81,9 @@ button:hover {
 }
 
 /* Estilo para la numeración de preguntas */
-.form-item {
-    counter-reset: item;
-}
-
 .form-item label::before {
-    content: counter(item) ". ";
-    counter-increment: item;
+    
+   
     margin-right: 0.5rem;
     font-weight: bold;
     color: navy;
