@@ -3,25 +3,15 @@
 
 :root {
     --color-primario: #FFD100;
-    /* Color primario */
     --color-secundario: #00247D;
-    /* Color secundario */
     --color-acento1: #EF3340;
-    /* Color de acento 1 */
     --color-acento2: #FFFFFF;
-    /* Color de acento 2 */
     --fuente-encabezado: 'Tus Fuentes Seleccionadas', sans-serif;
-    /* Fuente para encabezados */
     --fuente-parrafo: 'Otra Fuente', serif;
-    /* Fuente para párrafos */
     --color-fondo-navegacion: #00247D;
-    /* Color de fondo de la navegación */
     --color-enlace-navegacion: #FFFFFF;
-    /* Color de enlaces de navegación */
     --color-enlace-navegacion-hover: #FFD100;
-    /* Color de enlaces de navegación al pasar el mouse */
     --color-fondo-enlace-navegacion-hover: #EF3340;
-    /* Color de fondo de enlaces de navegación al pasar el mouse */
 }
 
 /* Style headers and párrafos */
@@ -119,7 +109,6 @@ nav a {
 /* Estilos para la sección de historia */
 .history-section {
     display: grid;
-   
     grid-template-columns: 1fr auto 1fr;
     /* Tres columnas, la del medio para la imagen, las otras para el texto */
     gap: 20px;
@@ -148,15 +137,13 @@ nav a {
 
 /* Estilo para el texto izquierdo en la caja History */
 .history-text-left {
-    text-align:left;
-    
+    text-align: left;
     margin-right: 10px;
 }
 
 /* Estilo para el texto derecho en la caja History */
 .history-text-right {
-    text-align:right;
-  
+    text-align: right;
     margin-left: 10px;
 }
 
@@ -179,20 +166,72 @@ nav a {
 /* Estilos para el pie de página */
 footer {
     background-color: #efefef;
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
 }
 
 .sociallinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 20px;
 }
 
 .sociallinks figure {
-    margin-left: 10px;
+    margin-left: 5px;
+    /* Ajustado para evitar problemas de validación */
 }
 
 .sociallinks img {
     width: 30px;
+    /* Ajusta el tamaño según sea necesario */
     height: auto;
+}
+
+/* Agrega estilos para el formulario de contacto */
+#contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-section label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact-section input,
+#contact-section select,
+#contact-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#contact-section textarea {
+    resize: vertical;
+}
+
+/* Estilos para la sección de información de la empresa */
+#company-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de imágenes de empleados */
+#employee-images {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#employee-images figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#employee-images figcaption {
+    font-style: italic;
+}
+
+/* Para evitar repetición, podríamos definir una clase común para estilos compartidos */
+.shared-style {
+    /* Estilos comunes aquí */
 }
