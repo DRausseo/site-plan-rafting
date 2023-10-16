@@ -21,18 +21,20 @@
     <nav>
        
         <ul>
+          <img src="images/logo.jpg" alt="Rafting Site Logo"><convert input.jpg -resize 10x10 output.jpg></convert>
+            
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             
         </ul>
     </nav>
-
     <main>
         <!-- Contenido principal de la página -->
 
         <!-- Sección de Contacto -->
         <section id="contact-section">
             <h2>Contact Us</h2>
+            
             <!-- Formulario de contacto -->
             <form action="tu_script_de_procesamiento.php" method="post">
                 <label for="name">Your Name:</label>
@@ -70,7 +72,7 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.5800761419937!2d-62.676796025378316!3d8.344453191692097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf0708c01c48d%3A0x1cc9826a97c36a80!2sC.%20Urdaneta%2C%20Ciudad%20Guayana%208051%2C%20Bol%C3%ADvar%2C%20Venezuela!5e0!3m2!1ses-419!2sbr!4v1697387144937!5m2!1ses-419!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -80,14 +82,24 @@
         <section id="employee-images">
             <h2>Meet Our Team</h2>
             <figure class="history-box">
+                <div class="history-text-left">
+                    <p>Venezuela, thanks to the diversity and purity of its landscapes, offers you various ideal places to practice
+                        Rafting.
+                        This sport became popular during the 80s, and since then it has gained many fans.</p>
+                </div>
                 <img src="images/raftingVZLA.jpeg" alt="raftingVZLA" class="history-image">
-                <p class="history-text-left">Venezuela, thanks to the diversity and purity of its landscapes, offers you various ideal places to practice Rafting.
-                This sport became popular during the 80s, and since then it has gained many fans.</p>
-                <p class="history-text-right">In the heart of the Gran Sabana, at the foot of the Yuruaní tepuy, is another ideal place for extreme sailing.
-                Furthermore, when crossing the bridge over the Yuruaní, one of the main falls of the river can be seen in the distance,
-                the Arapená-merú, which offers a high level of safety, since the enormous flow slides over immense slabs of jasper, and
-                It does not crash violently against rocks as is usual.</p>
+                <div class="history-text-right">
+                    <p>In the heart of the Gran Sabana, at the foot of the Yuruaní tepuy, is another ideal place for extreme
+                        sailing.
+                        Furthermore, when crossing the bridge over the Yuruaní, one of the main falls of the river can be seen in
+                        the distance,
+                        the Arapená-merú, which offers a high level of safety, since the enormous flow slides over immense slabs of
+                        jasper, and
+                        It does not crash violently against rocks as is usual.</p>
+                </div>
             </figure>
+
+
             <figure>
                 <img src="images/rafting_1.jpg" alt="White Water Rafting 1">
                 <figcaption>Los Dientes del Diablo</figcaption>
@@ -105,9 +117,10 @@
                 <figcaption>Rapid XYZ</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting_5.jpg" alt="White Water Rafting 5">
+                <img src="images/rafting_5.jpg" alt="White Water Rafting 5" style="width: 115%; height: auto;">
                 <figcaption>Another Adventure</figcaption>
             </figure>
+
         </section>
     </main>
 
