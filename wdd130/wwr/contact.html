@@ -5,7 +5,8 @@
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+        <meta name="description" content="Contact White Water Rafting for thrilling rafting experiences. Inquire, make reservations, or ask any questions about our services. Reach us at info@whitewaterrafting.com or +55 (11) 932-090994.">
+
         content="Get in touch with White Water Rafting - Contact Us for thrilling rafting experiences and for inquiries, reservations, or any questions you may have about our services.">
     <meta name="author" content="Danny Manuel Rausseo">
     <title>White Water Rafting - Contact Us</title>
@@ -36,12 +37,27 @@
             <h2>Contact Us</h2>
             
             <!-- Formulario de contacto -->
-            <form action="tu_script_de_procesamiento.php" method="post">
+            <form action="tu_script_de_procesamiento.php" method="post" class="contact-form">
+                <div class="form-group"></div>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
+                <label for="purpose-general">
+                                    <input type="radio" id="purpose-general" name="message-purpose" value="general">
+                    General Inquiry
+                </label>
+                
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="message-purpose" value="reservation">
+                    Reservation Question
+                </label>
+                
+                <label for="purpose-suggestion">
+                    <input type="radio" id="purpose-suggestion" name="message-purpose" value="suggestion">
+                    Website Suggestion
+                </label>
 
                 <label for="message-purpose">Purpose of Your Message:</label>
                 <select id="message-purpose" name="message-purpose">
@@ -117,7 +133,7 @@
                 <figcaption>Rapid XYZ</figcaption>
             </figure>
             <figure>
-                <img src="images/rafting_5.jpg" alt="White Water Rafting 5" style="width: 115%; height: auto;">
+                <img src="images/rafting_5.jpg" alt="White Water Rafting 5" style="width: 55%; height: auto;">
                 <figcaption>Another Adventure</figcaption>
             </figure>
 

@@ -173,10 +173,11 @@ footer {
     /* Ajusta el tamaño según sea necesario */
     height: auto;
 }
-
+.form-group {
+    margin-bottom: 20px;
 /* Agrega estilos para el formulario de contacto */
 #contact-section form {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -190,7 +191,19 @@ footer {
 #contact-section textarea {
     width: 100%;
     padding: 8px;
+    box-sizing: border-box;
     margin-bottom: 16px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
 }
 
 #contact-section textarea {
