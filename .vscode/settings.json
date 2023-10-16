@@ -1,4 +1,8 @@
 {
     "editor.formatOnPaste": true,
-    "livePreview.defaultPreviewPath": "/wwr/about.html"
+    "livePreview.defaultPreviewPath": "/wwr/about.html",
+    "window.autoDetectColorScheme": false,
+    "explorer.compactFolders": false,
+    "explorer.enableUndo": true,
+    "explorer.expandSingleFolderWorkspaces": false
 }
