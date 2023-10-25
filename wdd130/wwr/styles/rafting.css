@@ -1,7 +1,9 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tus+Fuentes+Seleccionadas');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
 :root {
+    --fuente-encabezado: 'Lora', sans-serif;
+    --fuente-parrafo: 'Otra Fuente', serif;
     --color-primario: #FFD100;
     --color-secundario: #00247D;
     --color-acento1: #EF3340;
@@ -14,7 +16,6 @@
     --color-fondo-enlace-navegacion-hover: #EF3340;
 }
 
-/* Style headers and párrafos */
 h1,
 h2,
 h3,
@@ -28,27 +29,25 @@ h6 {
 p {
     font-family: var(--fuente-parrafo);
     color: var(--color-secundario);
-    /* Others styles of párrafos */
 }
 
-/* delete subrayado de enlaces sociales */
 .sociallinks a {
     text-decoration: none;
+    color: inherit;
+    
 }
 
-/* Limita el ancho de la página */
+
 body {
     max-width: 1200px;
-    /* Ajusta según tus preferencias */
     margin: 0 auto;
 }
 
-/* Estilo del contenedor Hero */
+
 .hero {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     background-repeat: no-repeat;
-    /* Evitar la repetición de la imagen de fondo */
     background-size: cover;
 }
 
@@ -60,30 +59,29 @@ body {
 
 .hero .title-box {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(204, 196, 196, 0.8);
     padding: 20px;
     text-align: center;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
 }
 
-/* Estilo para el título dentro de la caja */
+
 .hero h1 {
     margin: 0;
     font-size: 2.5rem;
     color: var(--color-primario);
 }
 
-/* Estilos para el encabezado */
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 2fr;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f99806;
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
@@ -94,16 +92,12 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* Distribuye uniformemente los elementos */
 }
 
 nav a {
     margin-right: 10px;
-    /* Espaciado entre enlaces, ajusta según sea necesario */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
     color: #333;
-    /* Color del texto, ajusta según sea necesario */
 }
 
 .history-box {
@@ -121,20 +115,17 @@ nav a {
 
 .history-image {
     max-width: 50%;
-    margin: 0 20px;
-    /* Ajusta según tus preferencias de espaciado */
+    margin: 0 30px;
 }
 
 .history-content {
     flex: 1;
-    /* El contenido ocupará el espacio disponible */
 }
 
 .history-image {
     max-width: 50%;
-    /* Ajusta según tus preferencias */
 }
-/* Estilos para la sección de aventuras */
+
 .adventures-section {
     display: flex;
     justify-content: space-between;
@@ -142,15 +133,27 @@ nav a {
 }
 
 .adventures-section figure {
-    flex: 0 1 calc(20% - 10px);
+    flex: 1;
+        margin: 0 10px;
+       
+        text-align: center;
 }
 
 .adventures-section img {
     width: 100%;
+        height: auto;
+        max-width: 100%;
+        
+        object-fit: cover;
+}
+
+#caroni-image,
+#aponguao-image {
+    max-width: 150%;
     height: auto;
 }
 
-/* Estilos para el pie de página */
+
 footer {
     background-color: #efefef;
     padding: 20px;
@@ -165,73 +168,18 @@ footer {
 
 .sociallinks figure {
     margin-left: 5px;
-    /* Ajustado para evitar problemas de validación */
 }
 
 .sociallinks img {
     width: 30px;
-    /* Ajusta el tamaño según sea necesario */
     height: auto;
 }
+
 .form-group {
     margin-bottom: 20px;
+}
+
 /* Agrega estilos para el formulario de contacto */
 #contact-section form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-#contact-section label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-#contact-section input,
-#contact-section select,
-#contact-section textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #45a049;
-}
-
-#contact-section textarea {
-    resize: vertical;
-}
-
-/* Estilos para la sección de información de la empresa */
-#company-info {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Estilos para la sección de imágenes de empleados */
-#employee-images {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-#employee-images figure {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#employee-images figcaption {
-    font-style: italic;
-}
-
-/* Para evitar repetición, podríamos definir una clase común para estilos compartidos */
-.shared-style {
-    /* Estilos comunes aquí */
+    /* Estilos del formulario */
 }
