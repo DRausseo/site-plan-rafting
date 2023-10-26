@@ -1,19 +1,21 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-
+<@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 :root {
     --fuente-encabezado: 'Lora', sans-serif;
-    --fuente-parrafo: 'Otra Fuente', serif;
+    --fuente-parrafo: sans-serif;
     --color-primario: #FFD100;
-    --color-secundario: #00247D;
+    --color-secundario: #1345c4;
     --color-acento1: #EF3340;
     --color-acento2: #FFFFFF;
-    --fuente-encabezado: 'Tus Fuentes Seleccionadas', sans-serif;
-    --fuente-parrafo: 'Otra Fuente', serif;
     --color-fondo-navegacion: #00247D;
     --color-enlace-navegacion: #FFFFFF;
     --color-enlace-navegacion-hover: #FFD100;
     --color-fondo-enlace-navegacion-hover: #EF3340;
+}
+/body {
+    font-family: 'Lora', cursive;
+    background-color: rgb(151, 228, 244);
+    color: white;
 }
 
 h1,
@@ -30,19 +32,89 @@ p {
     font-family: var(--fuente-parrafo);
     color: var(--color-secundario);
 }
+    {
+        margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+        }
+        body {
+            font-family: var(--fuente-encabezado);
+            background-color: rgba(152, 227, 150, 0.892);
+            color: rgb(27, 10, 158);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url(images/raftingVZLA.jpeg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+    
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .logo {
+            color: rgb(4, 59, 59);
+            font-size: 25px;
+        }
+    
+        .menu .navbar ul li a {
+            position: relative;
+            float: left;
+        }
+    
+        .menu .navbar ul li a {
+            font-size: 18px;
+            padding: 20px;
+            color: aquamarine;
+            display: block;
+        }
+    
+        .menu .navbar ul li a:hover {
+            color: aqua;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
 
 .sociallinks a {
     text-decoration: none;
     color: inherit;
     
 }
-
-
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 
 .hero {
     position: relative;
@@ -76,17 +148,6 @@ body {
     color: var(--color-primario);
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 2fr;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #f99806;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: #efefef;
-}
 
 nav {
     display: flex;
